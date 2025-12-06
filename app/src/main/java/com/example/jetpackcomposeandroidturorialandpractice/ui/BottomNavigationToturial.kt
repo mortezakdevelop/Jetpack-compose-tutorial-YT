@@ -11,13 +11,7 @@ import androidx.compose.foundation.layout.only
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Email
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Person
-import androidx.compose.material.icons.outlined.Email
-import androidx.compose.material.icons.outlined.Home
-import androidx.compose.material.icons.outlined.Person
+
 import androidx.compose.material3.Badge
 import androidx.compose.material3.BadgedBox
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -50,30 +44,30 @@ import com.example.jetpackcomposeandroidturorialandpractice.R
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
 fun BottomNavigation() {
-    val items = listOf(
-        NavItemsState(
-            title = "home",
-            selectedIcon = Icons.Filled.Home,
-            unselectedIcon = Icons.Outlined.Home,
-            hasBadge = false,
-            badgeNumber = 0
-        ),
-        NavItemsState(
-            title = "Inbox",
-            selectedIcon = Icons.Filled.Email,
-            unselectedIcon = Icons.Outlined.Email,
-            hasBadge = true,
-            badgeNumber = 11
-        ),
-        NavItemsState(
-            title = "profile",
-            selectedIcon = Icons.Filled.Person,
-            unselectedIcon = Icons.Outlined.Person,
-            hasBadge = true,
-            badgeNumber = 2
-        )
-    )
-    var bottomNavState by rememberSaveable {
+    //val items = listOf(
+        /*        NavItemsState(
+                    title = "home",
+                    selectedIcon = Icons.Filled.Home,
+                    unselectedIcon = Icons.Outlined.Home,
+                    hasBadge = false,
+                    badgeNumber = 0
+                ),
+                NavItemsState(
+                    title = "Inbox",
+                    selectedIcon = Icons.Filled.Email,
+                    unselectedIcon = Icons.Outlined.Email,
+                    hasBadge = true,
+                    badgeNumber = 11
+                ),
+                NavItemsState(
+                    title = "profile",
+                    selectedIcon = Icons.Filled.Person,
+                    unselectedIcon = Icons.Outlined.Person,
+                    hasBadge = true,
+                    badgeNumber = 2
+                )*/
+    //)
+/*    var bottomNavState by rememberSaveable {
         mutableIntStateOf(0)
     }
     Scaffold(
@@ -127,13 +121,14 @@ fun BottomNavigation() {
                 fontWeight = FontWeight.ExtraBold
             )
         }
-    }
+    }*/
 }
 
+/*
 data class NavItemsState(
     val title: String,
     val selectedIcon: ImageVector,
     val unselectedIcon: ImageVector,
     val hasBadge: Boolean,
     val badgeNumber: Int
-)
+)*/

@@ -1,7 +1,6 @@
 package com.example.jetpackcomposeandroidturorialandpractice.ui
 
 import android.annotation.SuppressLint
-import android.widget.ImageButton
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
@@ -10,16 +9,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.statusBars
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.AccountCircle
-import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.DateRange
-import androidx.compose.material.icons.filled.FavoriteBorder
-import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FloatingActionButton
@@ -30,7 +22,12 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
-import androidx.compose.material3.TopAppBarState
+import androidx.compose.material3.icons.Icons
+import androidx.compose.material3.icons.filled.AccountCircle
+import androidx.compose.material3.icons.filled.Add
+import androidx.compose.material3.icons.filled.DateRange
+import androidx.compose.material3.icons.filled.FavoriteBorder
+import androidx.compose.material3.icons.filled.Menu
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -50,10 +47,12 @@ fun TopAppBar() {
     Scaffold(
         contentWindowInsets = WindowInsets.statusBars,
         bottomBar = {
-            BottomAppBar(modifier = Modifier
-                .padding(10.dp)
-                .navigationBarsPadding()
-                .clip(RoundedCornerShape(20.dp))) {
+            BottomAppBar(
+                modifier = Modifier
+                    .padding(10.dp)
+                    .navigationBarsPadding()
+                    .clip(RoundedCornerShape(20.dp))
+            ) {
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     verticalAlignment = Alignment.CenterVertically,
